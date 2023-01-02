@@ -1,0 +1,90 @@
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+      <div class="d-flex mt-2">
+        <button mat-icon-button (click)="toggleSidebar()">
+          <mat-icon>menu</mat-icon></button>
+          <div> <button>
+            <i class="fa-solid fa-magnifying-glass"></i></button> <span class="ser">Search transactions, invoices or help</span></div>      
+ </div>
+     <div class="row mr-2 ml-auto">
+        <ul class="row m-0 align-items-center">
+          <li>
+            <div class="d-flex">
+              <button
+            mat-button
+            [matMenuTriggerFor]="menu1"
+            class="user mt-2 d-flex align-items-center"
+          >
+          <i class="fa-solid fa-bell"></i>
+          </button>
+            <button
+              mat-button
+              [matMenuTriggerFor]="menu"
+              class="user mt-2 d-flex align-items-center"
+            > Jone Doe
+              <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+              <img src="../../assets/image/profile-pic-01.jpg" alt="alt"class="rounded-circle"   style="width: 30px;">
+            </button>
+            </div>
+            
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>perm_identity</mat-icon>
+                My Profile
+                </button>               
+                  <button mat-menu-item>                   
+                <mat-icon>open_in_new</mat-icon>
+                Billing
+                </button>
+                <button mat-menu-item> 
+                <mat-icon>exit_to_app</mat-icon>
+                Logout
+              </button>
+            </mat-menu>
+            <mat-menu #menu1="matMenu">
+              <button mat-menu-item>
+                <div class="d-flex mts1">
+                  <div class="d-flex">
+                    <img src="../../assets/image/profile-pic-02.jpg" alt="alt"class="rounded-circle" width="45px" height="45vh">
+                    <div class="my-auto">
+                      <p>Drew James</p>
+                      <p>Assigned you on the call with Sara</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p>2 min ago</p>
+                  </div>
+                </div>
+                <div class="d-flex mts1">
+                  <div class="d-flex">
+                    <img src="../../assets/image/profile-pic-05.jpg" alt="alt"class="rounded-circle" width="45px" height="45vh">
+                    <div class="my-auto">
+                      <p>Alexa Marry</p>
+                      <p>Marked the task New UI as done</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p>5 min ag0</p>
+                  </div>
+                </div>
+                <div class="d-flex mts1">
+                  <div class="d-flex">
+                    <img src="../../assets/image/profile-pic-06.jpg" alt="alt"class="rounded-circle" width="45px" height="45vh">
+                    <div class="my-auto">
+                      <p>Eva Maria</p>  
+                      <p>Added a new comment on Sales task</p>                    
+                    </div>
+                  </div>
+                  <div>
+                    <p>8 min ago</p>
+                  </div>
+                </div>
+           </button>
+           </mat-menu>
+           </li>
+           </ul>          
+        
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

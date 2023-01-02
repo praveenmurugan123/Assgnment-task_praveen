@@ -1,0 +1,141 @@
+<div class="container bgs">
+  <div class=" d-flex mts" >
+    <div class="d-flex page__box mt-2">Overview</div>
+      <div><button type="button" class="btn btn-primary ">Add Fund +</button></div>
+  </div>
+  <div class="row mt-3">
+    <!-- <div class="page__content shadow p-3 position-relative">
+      <div class="page__content-data position-absolute text-center"> -->
+      <div class="col-lg-4">
+        <div class="mgs">
+          <img src="../../assets/image/img111.png" alt="alt" class="img-fluid">
+        </div>
+         
+      </div>
+      <div class="col-lg-4">
+        <div class="mgs">
+          <img src="../../assets/image/img22" alt="alt" class="img-fluid">
+        </div>        
+     </div>
+     <div class="col-lg-4 ">
+      <div class="card mgs">
+        <div class="card-body">
+          <div  style="text-align: center;">
+            <img src="../../assets/image/profile-pic-01.jpg" alt="alt"class="rounded-circle"   style="width: 30px;">
+          <p>Nick Herasimenka</p>
+          <p>United States</p>
+          <div class="d-flex me">
+            <ul>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-whatsapp"></i></li>
+            </ul>
+           </div>
+          </div>                       
+          <hr>      
+          <div class="d-flex mts">
+            <h4 >Our Users</h4>
+            <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>           
+          <div class="d-flex mts1">
+            <div class="d-flex">
+              <img src="../../assets/image/profile-pic-03.jpg" alt="alt"class="rounded-circle" width="45px" height="45vh">
+              <div class="my-auto">
+                <p>Drew James</p>
+                <p>United States</p>
+              </div>
+            </div>
+            <div>
+              <p>Mobile : 8715674877</p>
+            </div>
+          </div>
+          <div class="d-flex mts1">
+            <div class="d-flex">
+              <img src="../../assets/image/profile-pic-02.jpg" alt="alt"class="rounded-circle" width="45px" height="45vh">
+              <div class="my-auto">
+                <p>Bavid Kames</p>
+                <p>United States</p>
+              </div>
+            </div>
+            <div>
+              <p>Mobile : 8715674877</p>
+            </div>
+          </div>
+          <div class="d-flex mts1">
+            <div class="d-flex">
+              <img src="../../assets/image/profile-pic-04.jpg" alt="alt"class="rounded-circle" width="45px" height="45vh">
+              <div class="my-auto">
+                <p>Lavid Emes</p>
+                <p>United States</p>
+              </div>
+            </div>
+            <div>
+              <p>Mobile : 8715674877</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+   <div class="col-lg-8 my-4">
+    <div>
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">    
+          <!-- Position Column -->
+          <ng-container  matColumnDef="Location">
+            <th mat-header-cell *matHeaderCellDef>Location </th>
+            <td mat-cell *matCellDef="let element"> {{element.Location}} </td>
+          </ng-container>
+      
+          <!-- Name Column -->
+          <ng-container  matColumnDef="Views">
+            <th mat-header-cell *matHeaderCellDef>Views</th>
+            <td mat-cell *matCellDef="let element"> {{element.Views}} </td>
+          </ng-container>
+      
+          <!-- Weight Column -->
+          <ng-container   matColumnDef="Sales">
+            <th mat-header-cell *matHeaderCellDef> Sales </th>
+            <td mat-cell *matCellDef="let element"> {{element.Sales}} </td>
+          </ng-container>
+      
+          <!-- Symbol Column -->
+          <ng-container   matColumnDef="Conversion">
+            <th mat-header-cell *matHeaderCellDef>Conversion </th>
+            <td mat-cell *matCellDef="let element"> {{element.Conversion}} </td>
+          </ng-container>
+          <ng-container  matColumnDef="Total">
+            <th mat-header-cell *matHeaderCellDef>Total</th>
+            <td mat-cell *matCellDef="let element"> {{element.Total}} </td>
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                       showFirstLastButtons
+                       aria-label="Select page of periodic elements">
+        </mat-paginator> -->
+      </div>
+    </div>
+    
+    
+   </div>
+   <div class="col-lg-4 mt-5">
+    <div class="mg1">    
+    <div class="">
+      <div class="d-flex mts">
+        <p>Product</p>
+        <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207"></iframe>
+   </div>
+    </div>
+   </div>
+   </div>
+      <!-- </div>
+    </div> -->
+  </div>
+  </div>

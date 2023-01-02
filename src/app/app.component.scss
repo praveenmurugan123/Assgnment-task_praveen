@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  mat-drawer {
+    width: 260px;
+  }
+  mat-drawer-container {
+    height: 100%;
+  }
+  
+  mat-drawer {
+    background: #43425D;
+    color: white;
+  }
+  .mat-mdc-list-item .mdc-list-item__primary-text {
+    font: 400 16px/24px Roboto, sans-serif;
+    letter-spacing: .03125em;
+    color: red;
+}
+
+
+// resposive design for moblie
+
